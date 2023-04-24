@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- !BÀI TẬP 1 -->
+    <div class="container py-5">
+        <h3>TÍNH LƯƠNG NHÂN VIÊN</h3>
+        <form class="w-50">
+            <label class="mb-1">Nhập lương một ngày</label>
+            <input type="number" class="form-control mb-3" id="inputSal">
+            <label class="mb-1">Nhập số ngày làm việc</label>
+            <input type="number" class="form-control mb-3" id="inputWork">
+            <button type="button" id="btnSal" class="btn btn-primary">Tính lương</button>
+        </form>
+        <p class="w-50 my-3 alert alert-info" id="txtSal"></p>
+    </div>
+
+    <!--!BÀI TẬP 2 -->
+    <div class="container py-5">
+        <h3>TÍNH SỐ TRUNG BÌNH</h3>
+        <form class="w-50 form-row justify-content-start">
+            <label class="mb-1 col-12">Nhập giá trị</label>
+            <input type="number" class="form-control mb-3 mr-2 col-3" id="inputNum1" placeholder="Số thứ nhất">
+            <input type="number" class="form-control mb-3 mr-2 col-3" id="inputNum2" placeholder="Số thứ hai">
+            <input type="number" class="form-control mb-3 mr-2 col-3" id="inputNum3" placeholder="Số thứ ba">
+            <input type="number" class="form-control mb-3 mr-2 col-3" id="inputNum4" placeholder="Số thứ tư">
+            <input type="number" class="form-control mb-3 col-3" id="inputNum5" placeholder="Số thứ năm">
+        </form>
+        <div class="w-50 form-row">
+            <button type="button" id="btnAver" class="btn btn-primary col-4 mr-3 mb-3">Tính trung bình</button>
+        </div>
+        <p class="w-50 form-row justify-content-start alert alert-info" id="txtAver"></p>
+    </div>
+
+    <!--!BÀI TẬP 3 -->
+    <div class="container py-5">
+        <h3>QUY ĐỔI TIỀN</h3>
+        <form class="w-50">
+            <label class="mb-1">Tỷ giá 1 USD = 23,500 VND<br> Nhập số tiền (USD)</label>          
+            <input type="number" class="form-control mb-3" id="inputCur">           
+            <button type="button" id="btnCur" class="btn btn-primary">Quy đổi</button>
+        </form>
+        <p class="w-50 my-3 alert alert-info" id="txtCur"></p>
+    </div>
+
+    <!--!BÀI TẬP 4 -->
+    <div class="container py-5">
+        <h3>TÍNH DIỆN TÍCH, CHU VI HÌNH CHỮ NHẬT</h3>    
+        <form class="w-50">
+            <label class="mb-1">Chiều dài</label>            
+            <input type="number" class="form-control mb-2" id="inputLength">   
+            <label class="mb-1">Chiều rộng</label>        
+            <input type="number" class="form-control mb-4" id="inputWidth">
+            <button type="button" id="btnCalc" class="btn btn-primary">Tính</button>
+        </form>
+        <p class="w-50 my-3 alert alert-info" id="txtCalc"></p>
+    </div>
+
+    <!--!BÀI TẬP 5 -->
+    <div class="container py-5">
+        <h3>TÍNH TỔNG 2 KÝ SỐ</h3>
+        <form class="w-50">
+            <label class="mb-1">Nhập số có 2 chữ số</label>          
+            <input type="number" class="form-control mb-3" id="inputNumb">           
+            <button type="button" id="btnTotal" class="btn btn-primary">Tính tổng</button>
+        </form>
+        <p class="w-50 my-3 alert alert-info" id="txtTotal"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/BT1_Salary.js"></script>
+    <script src="./js/BT2_Average.js"></script>
+    <script src="./js/BT3_Currency.js"></script>
+    <script src="./js/BT4_Rectangle.js"></script>
+    <script src="./js/BT5_Total.js"></script>
+</body>
+
+</html>
